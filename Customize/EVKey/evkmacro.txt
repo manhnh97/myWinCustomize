@@ -1,0 +1,7 @@
+﻿<<Đây là dòng làm dấu Unicode, không được sửa hoặc xoá dòng này>>
+=-||==========
+=fullkeyen||0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+=fullkeyvi||AĂÂBCDĐEÊGHIKLMNOÔƠPQRSTUƯVXYaăâbcdđeêghiklmnoôơpqrstuưvxy
+=logbugchrome||I/ Môi trường test; URL: ; Google Chrome: 96.0.4664.45; OS: Windows 10 Version 21H2; ; II/ Tần suất: 1/1; ; III/ Bug; - Step: ; - Actual: ; - Expect:
+=fullkeysymbol||`~!@#$%^&*()-_=+[]\{}|;':",./<>?
+=logbugfirefox||I/ Môi trường test; URL: ; Firefox: 95.0.2; OS: Windows 10 Version 2004; ; II/ Tần suất: 1/1; ; III/ Bug; - Step: ; - Actual: ; - Expect:

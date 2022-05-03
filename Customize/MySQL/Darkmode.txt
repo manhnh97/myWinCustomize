@@ -1,0 +1,1 @@
+https://github.com/mleandrojr/mysql-workbench-dark-theme/blob/master/code_editor.xml

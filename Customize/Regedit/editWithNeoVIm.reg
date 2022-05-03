@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; ========== NEOVIM - WINDOWS EXPLORER CONTEXT MENU ==========
+[HKEY_CLASSES_ROOT\*\shell\nvim-qt]
+@="Edit with NeoVim"
+"Icon"="C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe"
+
+[HKEY_CLASSES_ROOT\*\shell\nvim-qt\command]
+@="\"C:\\tools\\neovim\\nvim-win64\\bin\\nvim-qt.exe\" \"%1\""
