@@ -227,6 +227,31 @@
             "command": "tabSearch",
             "keys": "ctrl+alt+f"
         },
+        {
+            "command": 
+            {
+                "action": "multipleActions",
+                "actions": 
+                [
+                    {
+                        "action": "splitPane",
+                        "size":0.1,
+                        "split": "up",
+                        "splitMode":"duplicate"
+                    },
+                    {
+                        "action": "moveFocus",
+                        "direction": "previous"
+                    },
+                    {
+                        "action": "closePane"
+                    }
+
+                ]
+            },
+            "keys": "ctrl+shift+r",
+            "name": "restart tab"
+        },
     ],
     "alwaysShowTabs": true,
     "copyFormatting": "none",
