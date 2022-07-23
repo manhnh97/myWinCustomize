@@ -100,6 +100,33 @@
             },
             "keys": "ctrl+shift+9"
         },
+
+        {
+            "command": 
+            {
+                "action": "multipleActions",
+                "actions": 
+                [
+                    {
+                        "action": "splitPane",
+                        "size":0.1,
+                        "split": "up",
+                        "splitMode":"duplicate"
+                    },
+                    {
+                        "action": "moveFocus",
+                        "direction": "previous"
+                    },
+                    {
+                        "action": "closePane"
+                    }
+
+                ]
+            },
+            "keys": "ctrl+shift+r",
+            "name": "restart tab"
+        },
+
         // ========== END NEW WINDOWS ==========
         // ========== START NAVIGATE WINDOWS ACTIVATE ==========
         // START NAVIGATE PANEL WINDOWS ACTIVATE 
@@ -138,7 +165,7 @@
                 "action": "resizePane",
                 "direction": "left"
             },
-            "keys": "alt+shift+h"
+            "keys": "alt+shift+h" 
         },
         {
             "command": {
@@ -225,37 +252,12 @@
         },
         {
             "command": "tabSearch",
-            "keys": "ctrl+alt+f"
-        },
-        {
-            "command": 
-            {
-                "action": "multipleActions",
-                "actions": 
-                [
-                    {
-                        "action": "splitPane",
-                        "size":0.1,
-                        "split": "up",
-                        "splitMode":"duplicate"
-                    },
-                    {
-                        "action": "moveFocus",
-                        "direction": "previous"
-                    },
-                    {
-                        "action": "closePane"
-                    }
-
-                ]
-            },
-            "keys": "ctrl+shift+r",
-            "name": "restart tab"
+            "keys": "alt+t"
         },
     ],
     "alwaysShowTabs": true,
     "copyFormatting": "none",
-    "copyOnSelect": true,
+    "copyOnSelect": true ,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "disableAnimations": true,
     "language": "en-US",
@@ -264,28 +266,40 @@
         "defaults": {
             "cursorShape": "vintage",
             "font": {
-                "face": "Consolas"
-            },
-            "padding": "5, 5, 5, 5"
+                "face": "Cascadia Code PL"
+			},
+			"padding": "5, 5, 5, 5",
+			"backgroundImage": "https://raw.githubusercontent.com/0xTRAW/Linux-Commands-A-Z/main/Linux%20commands.png",
+			"backgroundImageStretchMode": "uniform",
+			"backgroundImageOpacity": 0.3,
+			"backgroundImageAlignment": "top"
         },
         "list": [
             {
+                "name": "Windows PowerShell",
                 "colorScheme": "Blue Matrix",
                 "cursorColor": "#FFFFFF",
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell",
                 "suppressApplicationTitle": true
             },
             {
-                "colorScheme": "Retro",
+                "name": "Command Prompt",
+                "colorScheme": "Builtin Dark",
                 "commandline": "cmd.exe",
                 "cursorShape": "bar",
                 "guid": "{0c63d969-ef2e-52d4-8736-68efbb78152d}",
                 "hidden": false,
-                "name": "Command Prompt",
                 "suppressApplicationTitle": true
-            }
+            },
+            {
+                "name": "ssh mnguye3@",
+                "commandline": "ssh mnguye3@",
+                "cursorShape": "bar",
+                "hidden": false,
+                "suppressApplicationTitle": true,
+				"icon": "😎"
+            },
         ]
     },
     "schemes": [
