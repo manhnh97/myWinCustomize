@@ -20,22 +20,24 @@ exit /B 0
 
 		REM ========== CONTACTS ==========
 		rem %PS% skype %force%
-		%PS% zalopc %force%
-		%PS% telegram %force%
+		rem %PS% zalopc %force%
+		rem %PS% telegram %force%
 
 		REM ========== TEXT EDITOR ==========
 		rem %PS% sublimetext3 %force%
 		rem %PS% notepadplusplus %force%
 		rem %PS% "microsoft-windows-terminal" %force%
-		%PS% neovim %force%
+		rem %PS% neovim %force%
+		@REM %PS% Vim %force%
+		%PS% cascadiacode %force%
 
-		REM ========== TEXT EDITORS FOR CODE ==========
+		REM ========== IDE for CODE ==========
 		:: IDE All in One
 		%PS% vscode %force%
 		:: IDE Java Programming Language
-		%PS% eclipse %force%
+		rem %PS% eclipse %force%
 		:: IDE C++/C#
-		@REM %PS% visualstudio2019community %force%
+		%PS% visualstudio2019professional %force%
 
 		%PS% python %force%
 		%PS% autohotkey %force%
@@ -51,6 +53,9 @@ exit /B 0
 		%PS% dotnet-5.0-sdk %force%
 		%PS% pip %force%
 		%PS% scite4autoit3 %force%
+		%PS% selenium %force%
+		%PS% chromedriver %force%
+
 
 		REM ========== WEB BROWSERS ==========
 		%PS% google-chrome-x64 %force%
@@ -77,16 +82,18 @@ exit /B 0
 
 		REM ========== NETWORK SYSTEM ==========
 		@REM %PS% winbox %force%
-		@REM %PS% wireshark %force%
+		%PS% wireshark %force%
 		@REM %PS% docker-desktop %force%
 
-		REM ========== MONITOR SYSTEM ==========
+		REM ========== SYSTEM ==========
 		:: Process Explorer
 		%PS% procexp %force%
 		:: Process Monitor
 		%PS% procmon %force%
 		:: CPU-Z
 		%PS% CPU-Z %force%
+		:: Folders Management
+		%PS% onecommander %force%
 
 
 		REM ========== UTILITIES ==========
@@ -105,7 +112,6 @@ exit /B 0
 		%PS% 7zip %force%
 		%PS% winrar %force%
 		%PS% spotify %force%
-
 
 	endlocal
 	goto :eof

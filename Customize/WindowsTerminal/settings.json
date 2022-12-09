@@ -92,14 +92,6 @@
         {
             "command": 
             {
-                "action": "moveFocus",
-                "direction": "previous"
-            },
-            "keys": "ctrl+alt+h"
-        },
-        {
-            "command": 
-            {
                 "action": "newTab",
                 "index": 7
             },
@@ -167,9 +159,12 @@
             "command": 
             {
                 "action": "sendInput",
-                "input": "ls\r"
+                "input": "ls -la\r"
             },
             "keys": "ctrl+l"
+        },
+        {
+            "command" : null, "keys" : ["ctrl+alt+h"]
         },
     // ========== WINDOWS PANE - NEW PANE ==========
     {
@@ -268,8 +263,6 @@
             },
             "keys": "alt+shift+k"
         },
-
-        
     ],
     "alwaysShowTabs": true,
     "copyFormatting": "none",
@@ -303,6 +296,10 @@
                 "cursorShape": "filledBox",
                 "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
                 "hidden": false,
+                "font": 
+            {
+                "face": "MesloLGS NF"
+            },
                 "name": "Ubuntu",
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
@@ -338,11 +335,6 @@
                 "name": "Developer PowerShell for VS 2022",
                 "source": "Windows.Terminal.VisualStudio"
             },
-            {
-                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-                "hidden": false,
-                "name": "Command Prompt"
-            }
         ]
     },
     "schemes": 
