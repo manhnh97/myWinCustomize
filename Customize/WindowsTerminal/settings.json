@@ -1,28 +1,10 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
-    // ========== NAVIGATION WINDOWS ==========
+    "actions": [
+        // ========== START NEW WINDOWS ==========
         {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "keys": "ctrl+shift+c"
-        },
-        {
-            "command": "openTabRenamer",
-            "keys": "alt+q"
-        },
-        {
-            "command": "paste",
-            "keys": "ctrl+shift+v"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "newTab"
             },
             "keys": "ctrl+shift+t"
@@ -32,102 +14,187 @@
             "keys": "alt+f4"
         },
         {
+            "command": "openTabRenamer",
+            "keys": "alt+shift+q"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "right",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+plus"
+        },
+        {
+            "command": {
+                "action": "splitPane",
+                "split": "down",
+                "splitMode": "duplicate"
+            },
+            "keys": "alt+shift+minus"
+        },
+        {
             "command": "openNewTabDropdown",
             "keys": "ctrl+shift+space"
         },
-        
         {
-            "command": "find",
-            "keys": "ctrl+shift+f"
-        },
-        
-        {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 0
             },
             "keys": "ctrl+shift+1"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 1
             },
             "keys": "ctrl+shift+2"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 2
             },
             "keys": "ctrl+shift+3"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 3
             },
             "keys": "ctrl+shift+4"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 4
             },
             "keys": "ctrl+shift+5"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 5
             },
             "keys": "ctrl+shift+6"
         },
         {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 7
-            },
-            "keys": "ctrl+shift+8"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "newTab",
                 "index": 6
             },
             "keys": "ctrl+shift+7"
         },
         {
-            "command": 
-            {
+            "command": {
+                "action": "newTab",
+                "index": 7
+            },
+            "keys": "ctrl+shift+8"
+        },
+        {
+            "command": {
                 "action": "newTab",
                 "index": 8
             },
             "keys": "ctrl+shift+9"
         },
         {
-            "command": "tabSearch",
-            "keys": "ctrl+alt+f"
-        },
-        {
             "command": 
             {
+                "action": "multipleActions",
+                "actions": 
+                [
+                    {
+                        "action": "splitPane",
+                        "size":0.1,
+                        "split": "up",
+                        "splitMode":"duplicate"
+                    },
+                    {
+                        "action": "moveFocus",
+                        "direction": "previous"
+                    },
+                    {
+                        "action": "closePane"
+                    }
+                ]
+            },
+            "keys": "ctrl+shift+r",
+            "name": "restart tab"
+        },
+        // ========== END NEW WINDOWS ==========
+        // ========== START NAVIGATE WINDOWS ACTIVATE ==========
+        // START NAVIGATE PANEL WINDOWS ACTIVATE 
+        {
+            "command": {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "keys": "alt+h"
+        },
+        {
+            "command": {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "keys": "alt+j"
+        },
+        {
+            "command": {
+                "action": "moveFocus",
+                "direction": "up"
+            },
+            "keys": "alt+k"
+        },
+        {
+            "command": {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "keys": "alt+l"
+        },
+        // END NAVIGATE PANEL WINDOWS ACTIVATE 
+        // START RESIZE PANEL
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "left"
+            },
+            "keys": "alt+shift+h" 
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "down"
+            },
+            "keys": "alt+shift+j"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "right"
+            },
+            "keys": "alt+shift+l"
+        },
+        {
+            "command": {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "keys": "alt+shift+k"
+        },
+        // END RESIZE PANEL
+        {
+            "command": {
                 "action": "moveTab",
                 "direction": "backward"
             },
             "keys": "ctrl+alt+["
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "moveTab",
                 "direction": "forward"
             },
@@ -137,55 +204,9 @@
             "command": "toggleReadOnlyMode",
             "keys": "alt+shift+r"
         },
+        // END SCROLL COMMANDLINE WINDOWS ACTIVATE
         {
-            "command": 
-            {
-                "action": "sendInput",
-                "input": "cd ..\rls\r"
-            },
-            "keys": "alt+ctrl+h"
-        },
-        {
-            "command": 
-            {
-                "action": "sendInput",
-                "input": "clear\r"
-            },
-            "keys": "ctrl+shift+k"
-        },
-        { "command": "scrollUp", "keys": "ctrl+k" },
-        { "command": "scrollDown", "keys": "ctrl+j" },
-        {
-            "command": 
-            {
-                "action": "sendInput",
-                "input": "ls -la\r"
-            },
-            "keys": "ctrl+l"
-        },
-        {
-            "command" : null, "keys" : ["ctrl+alt+h"]
-        },
-    // ========== WINDOWS PANE - NEW PANE ==========
-    {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right"
-            },
-            "keys": "alt+shift+plus"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "down"
-            },
-            "keys": "alt+shift+minus"
-        },
-        {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -196,149 +217,71 @@
             "command": "togglePaneZoom",
             "keys": "alt+shift+z"
         },
-    // ========== WINDOWS PANE - NAVIGATE PANE - Alt + H/J/K/L ==========
+        { "command": "toggleFocusMode", "keys": "alt+shift+f"},
+        // ========== NAVIGATE WINDOWS ACTIVATE ==========
+        // ========== OTHER FEATURES ==========
         {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "left"
+            "command": {
+                "action": "copy",
+                "singleLine": false
             },
-            "keys": "alt+h"
+            "keys": "ctrl+shift+c"
         },
         {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "down"
-            },
-            "keys": "alt+j"
+            "command": "paste",
+            "keys": "ctrl+shift+v"
         },
         {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "up"
-            },
-            "keys": "alt+k"
+            "command": "find",
+            "keys": "ctrl+shift+f"
         },
         {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "keys": "alt+l"
-        },
-    // ========== WINDOWS PANE - RESIZE PANE - ALT + SHIFT + H/J/K/L ==========
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "left"
-            },
-            "keys": "alt+shift+h"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "down"
-            },
-            "keys": "alt+shift+j"
-        },
-
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "right"
-            },
-            "keys": "alt+shift+l"
-        },
-        {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "keys": "alt+shift+k"
-        },
+            "command": "tabSearch",
+            "keys": "ctrl+alt+f"
+        }
+        // { "command": { "action": "sendInput", "input": "\b" }, "keys": "backspace" }
+        // { "command": { "action": "sendInput", "input": "\u001b\u007f" }, "keys": "ctrl+backspace" }
     ],
     "alwaysShowTabs": true,
+    "alwaysOnTop": false,
     "copyFormatting": "none",
-    "copyOnSelect": false,
+    "copyOnSelect": true ,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "disableAnimations": true,
     "language": "en-US",
     "launchMode": "default",
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "cursorShape": "vintage",
-            "font": 
-            {
-                "face": "Consolas"
+            "font": {
+                "face": "Cascadia Code PL",
+                "size": 9
             },
-            "padding": "5, 5, 5, 5"
+            "padding": "5, 5, 5, 5",
+            "backgroundImage": "https://raw.githubusercontent.com/0xTRAW/Linux-Commands-A-Z/main/Linux%20commands.png",
+			"backgroundImageStretchMode": "uniform",
+			"backgroundImageOpacity": 0.3,
+			"backgroundImageAlignment": "top"
         },
-        "list": 
-        [
+        "list": [
             {
+                "name": "Windows PowerShell",
                 "colorScheme": "Blue Matrix",
                 "cursorColor": "#FFFFFF",
-                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell"
+                "suppressApplicationTitle": true
             },
             {
-                "colorScheme": "Builtin Dark",
-                "cursorShape": "filledBox",
-                "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
-                "hidden": false,
-                "font": 
-            {
-                "face": "MesloLGS NF"
-            },
-                "name": "Ubuntu",
-                "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
-            },
-            {
+                "name": "Command Prompt",
                 "colorScheme": "Retro",
                 "commandline": "cmd.exe",
                 "cursorShape": "bar",
-                "guid": "{0c63d969-ef2e-52d4-8736-68efbb78152d}",
-                "hidden": false,
-                "name": "Command Prompt"
-            },
-            {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": true,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": true,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
-                "guid": "{b068f879-eab1-5821-b018-1dc8c5a81147}",
-                "hidden": true,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{64f2e795-5f6e-5171-bb26-be48fba479b9}",
-                "hidden": true,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
+                "hidden": true ,
+                "suppressApplicationTitle": true
+            }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#101116",
             "black": "#101116",
@@ -593,6 +536,29 @@
             "yellow": "#C4A000"
         },
         {
+            "background": "#24364B",
+            "black": "#2C3F58",
+            "blue": "#325D96",
+            "brightBlack": "#336889",
+            "brightBlue": "#34A6DA",
+            "brightCyan": "#42C3AE",
+            "brightGreen": "#31D07B",
+            "brightPurple": "#AE6BDC",
+            "brightRed": "#DD5944",
+            "brightWhite": "#D5D5D5",
+            "brightYellow": "#E7D84B",
+            "cursorColor": "#D5D5D5",
+            "cyan": "#35A08F",
+            "foreground": "#31D07B",
+            "green": "#1A9172",
+            "name": "ToyChest",
+            "purple": "#8A5EDC",
+            "red": "#BE2D26",
+            "selectionBackground": "#5F217A",
+            "white": "#23D183",
+            "yellow": "#DB8E27"
+        },
+        {
             "background": "#300A24",
             "black": "#171421",
             "blue": "#0037DA",
@@ -640,7 +606,7 @@
         }
     ],
     "startOnUserLogin": true,
-    "tabWidthMode": "compact",
+    "tabWidthMode": "titleLength",
     "theme": "dark",
     "windowingBehavior": "useAnyExisting"
 }
