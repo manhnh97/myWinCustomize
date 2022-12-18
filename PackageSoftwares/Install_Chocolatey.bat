@@ -37,15 +37,15 @@ exit /B 0
 		:: IDE Java Programming Language
 		rem %PS% eclipse %force%
 		:: IDE C++/C#
-		%PS% visualstudio2019professional %force%
+		%PS% visualstudio2019community %force%
 
 		%PS% python %force%
 		%PS% autohotkey %force%
 		%PS% autoit %force%
 
 		REM ========== AUTOMATION TESTING ==========
-		%PS% postman %force%
-		%PS% jmeter %force%
+		:: %PS% postman %force%
+		:: %PS% jmeter %force%
 		@REM %PS% selenium %force%
 		
 		REM ========== EXTENSIONS ==========
@@ -53,15 +53,14 @@ exit /B 0
 		%PS% dotnet-5.0-sdk %force%
 		%PS% pip %force%
 		%PS% scite4autoit3 %force%
-		%PS% selenium %force%
-		%PS% chromedriver %force%
+		@REM %PS% selenium %force%
+		@REM %PS% chromedriver %force%
 
 
 		REM ========== WEB BROWSERS ==========
 		%PS% google-chrome-x64 %force%
 		%PS% tor-browser %force%
 		%PS% firefox %force%
-		rem %PS% chromium %force%
 
 		REM ========== VPNs ==========
 		%PS% warp %force%
@@ -82,23 +81,23 @@ exit /B 0
 
 		REM ========== NETWORK SYSTEM ==========
 		@REM %PS% winbox %force%
-		%PS% wireshark %force%
+		:: %PS% wireshark %force%
 		@REM %PS% docker-desktop %force%
 
 		REM ========== SYSTEM ==========
 		:: Process Explorer
 		%PS% procexp %force%
 		:: Process Monitor
-		%PS% procmon %force%
+		@REM %PS% procmon %force%
 		:: CPU-Z
-		%PS% CPU-Z %force%
+		@REM %PS% CPU-Z %force%
 		:: Folders Management
 		%PS% onecommander %force%
 
 
 		REM ========== UTILITIES ==========
 		:: Capture Screen
-		%PS% lightshot %force%
+		%PS% greenshot %force%
 		%PS% screenpixelruler %force%
 		%PS% zoomit %force%
 		:: Record Press Keyboard
@@ -106,12 +105,10 @@ exit /B 0
 		:: Pomodoro Timer
 		%PS% tomighty %force%
 
-
 		REM ========== OTHER TOOLS ==========
 		%PS% vlc %force%
 		%PS% 7zip %force%
 		%PS% winrar %force%
 		%PS% spotify %force%
-
 	endlocal
 	goto :eof
